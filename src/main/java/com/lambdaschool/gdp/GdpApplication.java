@@ -43,6 +43,7 @@ public class GdpApplication {
     return new Jackson2JsonMessageConverter();
   }
 
+  @Bean
   public RabbitTemplate configRabbitTemplate(final ConnectionFactory cf) {
     final RabbitTemplate rabbitTemplate = new RabbitTemplate(cf);
     rabbitTemplate.setMessageConverter(producerJackson2JsonMessageConverter());
