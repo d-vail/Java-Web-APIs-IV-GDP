@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class Country {
   private @Id @GeneratedValue Long id;
   private String country;
-  private double gdp;
+  private Long gdp;
 
   /**
    * Default Constructor.
@@ -27,7 +27,7 @@ public class Country {
    * @param country The country's name
    * @param gdp     The country's gross domestic product
    */
-  public Country(String country, double gdp) {
+  public Country(String country, Long gdp) {
     this.country = country;
     this.gdp = gdp;
   }
