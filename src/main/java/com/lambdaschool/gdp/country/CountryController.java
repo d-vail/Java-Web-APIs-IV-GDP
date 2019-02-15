@@ -75,7 +75,7 @@ public class CountryController {
       throw new CountryNotFoundException(country);
     }
 
-    Log msg = new Log(String.format("Queried country: %s", country));
+    Log msg = new Log("Queried country");
     RBMQ_TEMPLATE.convertAndSend(GdpApplication.QUEUE, msg.toString());
     log.info("Message sent");
 
