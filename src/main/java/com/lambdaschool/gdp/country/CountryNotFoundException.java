@@ -15,4 +15,8 @@ public class CountryNotFoundException extends RuntimeException {
   public CountryNotFoundException(Long id) {
     super("Could not find country");
   }
+
+  public CountryNotFoundException(String country) {
+    super("Could not find country");
+  }
 }
