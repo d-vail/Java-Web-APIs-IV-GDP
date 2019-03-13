@@ -11,7 +11,7 @@ when certain data is accessed.
 
 #### Setup your database
 
-Set up an H2 database to hold the data for countries and their Gross Domestic Projects. Use the provided JSON file to 
+Set up an H2 database to hold the data for countries and their Gross Domestic Product. Use the provided JSON file to 
 upload your data. The data contains two fields:
 
 - The Country Name
